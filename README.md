@@ -30,7 +30,14 @@ _**Period**_
 
 **C. Methodology**
 
-- 
+- Imported Data: Dataset was imported into PostgreSQL (Neon Cloud) using DBeaver (CSV → Table mapping).
+- Connection: Connected Neon Cloud to Mode Analytics through the PostgreSQL connector.
+- SQL Queries: Executed directly in Mode. Each step produces a separate query result (see folder Query Results).
+  + I. Basic EDA:
+    - I.1. Check Column Type
+    - I.2. Check %Blank/Null.
+    - I.3. Check %Zero Value
+    - I.4. Check Outliers
 
 **D. Key Findings & Actionable Plans**
 
