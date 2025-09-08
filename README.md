@@ -6,14 +6,23 @@
 
 **A. Project Overview**
 
-- 
+- This project aims to analyze various aspects of the Albany Airbnb market. In this version, I'd like to get into 03 main ideas:
+  + Listing Characteristics: Overview of the type, size, and features of listings in Albany, helping identify the most common accommodation types and pricing ranges (listings.csv)
+  + Availability & Pricing Trends: Examine how pricing and availability fluctuate over time and across different types of listings (calendar.csv and listings.csv)
+  + Guest Feedback: Sentiment analysis and topic modeling to understand guest satisfaction and common issues (reviews.csv)
 
 **B. Dataset Information**
 
 _**Source**_
 
-- New York Airbnb Open Data (From Kaggle)
-- https://www.kaggle.com/datasets/rhonarosecortez/new-york-airbnb-open-data?
+- New York Airbnb Open Data (From Kaggle): capture key aspects of Albany’s Airbnb ecosystem
+
+https://www.kaggle.com/datasets/rhonarosecortez/new-york-airbnb-open-data?
+
+- The dataset includes 03 files:
+  + listings.csv: Information on property types, pricing, and host profiles.
+  + calendar.csv: Day to day availability and pricing records.
+  + reviews.csv: Guest reviews on each listings.
 
 _**Period**_
 
