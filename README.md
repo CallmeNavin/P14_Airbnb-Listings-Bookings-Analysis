@@ -1,5 +1,3 @@
-# P14_Airbnb-Listings-Bookings-Analysis
-
 # P13_Netflix-Movies-and-TV-Shows-Analysis
 
 **VERSION 1**
@@ -35,10 +33,17 @@ _**Period**_
 - SQL Queries: Executed directly in Mode. Each step produces a separate query result (see folder Query Results).
   + I. Basic EDA:
     - I.1. Check Column Type
-      I.1.1. After check: Change type for columns: host_response_rate, host_acceptance_rate, price (listings); price (calendar)
-    - I.2. Check %Blank/Null.
-    - I.3. Check %Zero Value
-    - I.4. Check Outliers
+    - I.2. Check %Blank/Null - Check main columns:
+      + listings: id, host_response_rate, host_acceptance_rate, room_type, price
+      + calendar: listing_id, date, available, price, minimum_nights, maximum_nights
+      + reviews: listing_id, id, date, reviewer_id, reviewer_name
+    - I.3. Check %Zero Value - Check Numeric & date columns
+    - I.4. Check Outliers - Check main columns (Use min/max or IQR base on cases):
+      + listings: price_num, host_response_rate, host_acceptance_rate
+      + calendar: date, minimum_nights, maximum_nights, price_num
+      + reviews: date
+- Note:
+  + Subsequent handling steps after checking blanks and grouping outliers will be performed either in Power BI or through temporary CTEs (WITH clauses) in the following SQL queries.
 
 **D. Key Findings & Actionable Plans**
 
