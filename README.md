@@ -43,7 +43,7 @@ _**Period**_
       + calendar: date, minimum_nights, maximum_nights, price_num
       + reviews: date
 - Note:
-  + Subsequent handling steps after checking blanks and grouping outliers will be performed either in Power BI or through temporary CTEs (WITH clauses) in the following SQL queries.
+  + After identifying blanks and outliers, further adjustments and scenario testing will be managed directly in Power BI dashboards or within the SQL workflow to ensure clean and reliable insights for decision-making
 
 **D. Key Findings & Actionable Plans**
 
