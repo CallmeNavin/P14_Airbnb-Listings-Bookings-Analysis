@@ -31,7 +31,7 @@ _**Period**_
 - Imported Data: Dataset was imported into PostgreSQL (Neon Cloud) using DBeaver (CSV → Table mapping).
 - Connection: Connected Neon Cloud to Mode Analytics through the PostgreSQL connector.
 - SQL Queries: Executed directly in Mode. Each step produces a separate query result (see folder Query Results).
-  + I. Basic EDA:
+  + I. Data Cleaning:
     - I.1. Check Column Type
     - I.2. Check %Blank/Null - Check main columns:
       + listings: id, host_response_rate, host_acceptance_rate, room_type, price
@@ -42,6 +42,11 @@ _**Period**_
       + listings: price_num, host_response_rate, host_acceptance_rate
       + calendar: date, minimum_nights, maximum_nights, price_num
       + reviews: date
+  + II. Query for Insights:
+    - I.1. Listings
+      + I.1.1. Rate by Room Type
+      + II.1.2. Histogram for host_response_rate_num, host_acceptance_rate_num
+    - I.2. Calendar
 - Note:
   + After identifying blanks and outliers, further adjustments and scenario testing will be managed directly in Power BI dashboards or within the SQL workflow to ensure clean and reliable insights for decision-making
 
