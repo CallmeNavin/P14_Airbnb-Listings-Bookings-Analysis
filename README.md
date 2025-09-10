@@ -4,10 +4,7 @@
 
 **A. Project Overview**
 
-- This project aims to analyze various aspects of the Albany Airbnb market. In this version, I'd like to get into 03 main ideas:
-  + Listing Characteristics: Overview of the type, size, and features of listings in Albany, helping identify the most common accommodation types and pricing ranges (listings.csv)
-  + Availability & Pricing Trends: Examine how pricing and availability fluctuate over time and across different types of listings (calendar.csv and listings.csv)
-  + Guest Feedback: Sentiment analysis and topic modeling to understand guest satisfaction and common issues (reviews.csv)
+- This project aims to analyze various aspects of the Albany Airbnb market. In this version, I'd like to get into an overview of market & focus on a little details to find room for improvement
 
 **B. Dataset Information**
 
@@ -24,7 +21,7 @@ https://www.kaggle.com/datasets/rhonarosecortez/new-york-airbnb-open-data?
 
 _**Period**_
 
-- 
+- The dataset covers multiple time frames: Reviews data spans 2014–2024, providing a long-term perspective on guest feedback. Calendar data spans Sep 2024–Sep 2025, capturing daily availability and pricing. Listings represent a snapshot of properties at the time of data extraction.
 
 **C. Methodology**
 
@@ -46,21 +43,32 @@ _**Period**_
     - I.1. Listings
       + II.1.2. Histogram for host_response_rate_num, host_acceptance_rate_num
     - I.2. Calendar & Reviews: Would be done in Power BI
-  + Export cleaned data
+  + Export cleaned data:
+    - Listings data was exported into a new table with primary key constraints to ensure uniqueness.
+    - Calendar and Reviews data were exported using CTE queries.
 - Using Power BI for Dashboard visualize & find insights.
 - Note:
-  + SQL in this project is just used for data checking cause mấy bước kia làm ở Power BI tiện lợi  hơn
+  + SQL was mainly used for data cleaning and validation checks, while Power BI handled most of the visualization and final analysis.
   + After identifying blanks and outliers, further adjustments and scenario testing will be managed directly in Power BI dashboards or within the SQL workflow to ensure clean and reliable insights for decision-making
 
 **D. Key Findings & Actionable Plans**
 
 _**Key Findings**_
 
-- 
+- The Average Actual Price is around 153 USD/night, very close to the Average Listed Price (gap ~28.8 USD), showing stable market pricing.
+- A total of 381 active listings.
+- Host Acceptance Rate (~88%) and Host Response Rate (~97%) are relatively high → indicating professional host behavior overall.
+- Average price across months is stable (flat trend), with a few dips in February and September → could be off-season or missing data.
+- The market is dominated by Entire home/apt (>74%), the most preferred room type among guests.
+- Host acceptance rates are quite similar across low- and high-price groups (~32% vs ~39%) → potential to improve host engagement.
+- Host response rates also show no clear difference across price groups (~36% vs ~37%) → potential to improve communication quality.
 
 _**Actionable Plans**_
 
-- 
+- Identify and train hosts with low acceptance/response rates to improve booking conversion.
+- Encourage hosts to keep availability consistent, reducing “not available” periods.
+- Focus marketing efforts on Entire home/apt, while incentivizing Private room hosts to diversify offerings.
+- Leverage seasonality (off-season months) with targeted promotions to balance demand.
 
 **About Me**
 
