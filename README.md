@@ -1,4 +1,4 @@
-# P13_Netflix-Movies-and-TV-Shows-Analysis
+# P14_Airbnb-Listings-Bookings-Analysis
 
 **VERSION 1**
 
@@ -34,7 +34,7 @@ _**Period**_
   + I. Data Cleaning:
     - I.1. Check Column Type
     - I.2. Check %Blank/Null - Check main columns:
-      + listings: id, host_response_rate, host_acceptance_rate, room_type, price
+      + listings: id, host_response_rate, host_acceptance_rate, room_type, price --> host_response_rate (3%), host_acceptance_rate (4%), price (6%)
       + calendar: listing_id, date, available, price, minimum_nights, maximum_nights
       + reviews: listing_id, id, date, reviewer_id, reviewer_name
     - I.3. Check %Zero Value - Check Numeric & date columns
@@ -44,10 +44,12 @@ _**Period**_
       + reviews: date
   + II. Query for Insights:
     - I.1. Listings
-      + I.1.1. Rate by Room Type
       + II.1.2. Histogram for host_response_rate_num, host_acceptance_rate_num
-    - I.2. Calendar
+    - I.2. Calendar & Reviews: Would be done in Power BI
+  + Export cleaned data
+- Using Power BI for Dashboard visualize & find insights.
 - Note:
+  + SQL in this project is just used for data checking cause mấy bước kia làm ở Power BI tiện lợi  hơn
   + After identifying blanks and outliers, further adjustments and scenario testing will be managed directly in Power BI dashboards or within the SQL workflow to ensure clean and reliable insights for decision-making
 
 **D. Key Findings & Actionable Plans**
