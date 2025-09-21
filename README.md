@@ -6,6 +6,9 @@
 
 - This project aims to analyze various aspects of the Albany Airbnb market. In this version, I'd like to get into an overview of market & focus on a little details to find room for improvement
 
+![Dashboard Visualization](https://github.com/CallmeNavin/P14_Airbnb-Listings-Bookings-Analysis/blob/main/Version%201/Visualization/Dashboard.png)
+_Explore more insights in the full Power BI dashboard_
+
 **B. Dataset Information**
 
 _**Source**_
